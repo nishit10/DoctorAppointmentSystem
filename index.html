@@ -1,0 +1,555 @@
+<!--
+Author: Nishit Thakkar
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - AppointDoctor</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet"
+	media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!--web-font-->
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+	rel='stylesheet' type='text/css'>
+<!--//web-font-->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="Hospice Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript">
+	
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+</script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1000);
+		});
+	});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="top-middle">
+				<a href="index.html">
+					<h3>AppointDoctor</h3>
+				</a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu-icon.png" alt="" /></span>
+				<ul class="nav1">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="Login.php">Login</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+					$("span.menu").click(function() {
+						$("ul.nav1").slideToggle(300, function() {
+							// Animation complete.
+						});
+					});
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--//header-->
+	<!--banner-->
+	<div class="banner">
+		<!--//End-slider-script -->
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function() {
+				// Slideshow1
+				$("#slider3").responsiveSlides({
+					auto : true,
+					pager : false,
+					nav : true,
+					speed : 500,
+					namespace : "callbacks",
+					before : function() {
+						$('.events').append("<li>before event fired.</li>");
+					},
+					after : function() {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});
+
+			});
+		</script>
+		<div id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li><img src="images/banner1.jpg" alt="" title=""/ ></li>
+				<li><img src="images/banner2.jpg" alt="" title=""/ ></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!--//banner-->
+	<!--work-->
+	<div class="work">
+		<div class="container">
+			<div class="work-title">
+				<h3>
+					LATEST<span>WORK</span>
+				</h3>
+			</div>
+			<!--//End-slider-script -->
+			<script src="js/responsiveslides.min.js">
+				
+			</script>
+			<script>
+				// You can also use "$(window).load(function() {"
+				$(function() {
+					// Slideshow 4
+					$("#slider4").responsiveSlides(
+							{
+								auto : true,
+								pager : false,
+								nav : true,
+								speed : 500,
+								namespace : "callbacks",
+								before : function() {
+									$('.events').append(
+											"<li>before event fired.</li>");
+								},
+								after : function() {
+									$('.events').append(
+											"<li>after event fired.</li>");
+								}
+							});
+
+				});
+			</script>
+			<div id="top" class="callbacks_container">
+				<ul class="rslides" id="slider4">
+					<li>
+						<div class="work-grids">
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>SUPERDUPER</h4>
+									<h3>WEBSITE</h3>
+									<div class="work-image">
+										<div class="work-gallery">
+											<img src="images/img2.jpg" alt="" title="img" />
+											<div class="figcaption">
+												<a href="singlepage.html" class="cptn-top"> </a> <a
+													href="singlepage.html" class="cptn-midle"> </a> <a
+													href="singlepage.html" class="cpnt-btm"> </a>
+											</div>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>ANOTHER PROJECT</h4>
+									<h3>TITLE</h3>
+									<div class="work-gallery">
+										<img src="images/img3.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>DESIGNE DWITH</h4>
+									<h3>LOVE</h3>
+									<div class="work-gallery">
+										<img src="images/img4.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>ANOTHER CREATIVE</h4>
+									<h3>PROJECT</h3>
+									<div class="work-gallery">
+										<img src="images/img5.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="work-grids">
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>VERY NICE</h4>
+									<h3>INDEED</h3>
+									<div class="work-gallery">
+										<img src="images/img6.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>YET ANOTHER</h4>
+									<h3>PROJECT</h3>
+									<div class="work-gallery">
+										<img src="images/img7.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>ALMSOT LAST</h4>
+									<h3>THING</h3>
+									<div class="work-gallery">
+										<img src="images/img8.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="work-grids-info">
+								<div class="work-grids-text">
+									<h4>YUP MISTER I’M</h4>
+									<h3>FIRST</h3>
+									<div class="work-gallery">
+										<img src="images/img9.jpg" alt="" title="image" />
+										<div class="figcaption">
+											<a href="singlepage.html" class="cptn-top"> </a> <a
+												href="singlepage.html" class="cptn-midle"> </a> <a
+												href="singlepage.html" class="cpnt-btm"> </a>
+										</div>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+										dolor.</p>
+								</div>
+								<div class="work-like">
+									<ul>
+										<li><span class="eye"> </span>327</li>
+										<li><a href="#" class="chat">49</a></li>
+										<div class="clearfix"></div>
+									</ul>
+								</div>
+								<span class="work-captn"> </span>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--//work-->
+	<!--counting-->
+	<div class="video">
+		<div class="container">
+			<h3>
+				WHAT CAN<span>WE DO?</span>
+			</h3>
+			<iframe width="560" height="315"
+				src="https://www.youtube.com/embed/f9CVzpMqIIs" frameborder="0"
+				allowfullscreen> </iframe>
+		</div>
+	</div>
+	<!--//counting-->
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="content-grids">
+				<div class="col-md-8 humble">
+					<div class="work-title humble-title">
+						<h3>
+							HUMBLE<span>LOREM IPSDUM</span>
+						</h3>
+					</div>
+					<div class="col-md-6 humble-grids">
+						<div class="content-left">
+							<a href="images/img1.jpg"
+								class="b-link-stripe b-animate-go   swipebox" title=""> <img
+								class="img-responsive" src="images/img1.jpg" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate1 b-from-left    b-delay03 ">
+										<img class="img-responsive" src="images/icon10.png"
+											class="zoom" alt="" />
+									</h2>
+								</div>
+							</a>
+							<h4>Suspendisse eu magna</h4>
+							<p>consectetur adipiscing elit. Suspendisse eu magna dolor,
+								quisque semperLorem ipsum dolor sit amet.</p>
+							<a class="rd-more" href="singlepage.html">Read More</a>
+						</div>
+					</div>
+					<div class="col-md-6 humble-grids">
+						<div class="content-left">
+							<a href="images/img37.jpg"
+								class="b-link-stripe b-animate-go   swipebox" title=""> <img
+								class="img-responsive" src="images/img37.jpg" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate1 b-from-left    b-delay03 ">
+										<img class="img-responsive" src="images/icon10.png"
+											class="zoom" alt="" />
+									</h2>
+								</div>
+							</a>
+							<h4>Suspendisse eu magna</h4>
+							<p>consectetur adipiscing elit. Suspendisse eu magna dolor,
+								quisque semperLorem ipsum dolor sit amet.</p>
+							<a class="rd-more" href="singlepage.html">Read More</a>
+						</div>
+					</div>
+					<link rel="stylesheet" href="css/swipebox.css">
+					<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 testi">
+					<div class="work-title testi-title">
+						<h3>
+							OUR<span>TESTIMONIALS</span>
+						</h3>
+					</div>
+					<!--//End-slider-script -->
+					<script src="js/responsiveslides.min.js"></script>
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function() {
+							// Slideshow 5
+							$("#slider5")
+									.responsiveSlides(
+											{
+												auto : true,
+												pager : false,
+												nav : true,
+												speed : 500,
+												namespace : "callbacks",
+												before : function() {
+													$('.events')
+															.append(
+																	"<li>before event fired.</li>");
+												},
+												after : function() {
+													$('.events')
+															.append(
+																	"<li>after event fired.</li>");
+												}
+											});
+
+						});
+					</script>
+					<div id="top" class="callbacks_container">
+						<ul class="rslides" id="slider5">
+							<li>
+								<div class="testi-slider">
+									<div class="testi-image">
+										<img src="images/img10.jpg" alt="" title="image" />
+									</div>
+									<h4>I AM VERY PLEASED.</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Suspendisse eu magna dolor, quisque semper.</p>
+									<div class="testi-subscript">
+										<p>
+											<a href="singlepage.html">John Doe,</a>Web Developer
+										</p>
+										<span class="sbscrpt"> </span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="testi-slider">
+									<div class="testi-image">
+										<img src="images/img11.jpg" alt="" title="image" />
+									</div>
+									<h4>I AM LOREM IPSUM.</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Suspendisse eu magna dolor, quisque semper.</p>
+									<div class="testi-subscript">
+										<p>
+											<a href="singlepage.html">elit semper,</a>User Developer
+										</p>
+										<span class="sbscrpt"> </span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="testi-slider">
+									<div class="testi-image">
+										<img src="images/img12.jpg" alt="" title="image" />
+									</div>
+									<h4>CONSECTETUR PIMAGNA.</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Suspendisse eu magna dolor, quisque semper.</p>
+									<div class="testi-subscript">
+										<p>
+											<a href="singlepage.html">Amet Doe,</a>Web Designer
+										</p>
+										<span class="sbscrpt"> </span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//content-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<a href="index.html">AppointDoctor</a>
+			</div>
+			<div class="footer-right">
+				<p>&copy; 2016 All rights reserved</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			 */
+
+			$().UItoTop({
+				easingType : 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span
+		id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+</body>
+</html>
